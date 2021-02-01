@@ -25,15 +25,5 @@ class WelcomeSpecs: QuickSpec {
                 expect(welcomeVC.welcomeButton.titleLabel?.text).to(equal("Welcome"))
             }
         }
-        
-        describe("The welcome button") {
-            beforeEach {
-                _ = welcomeVC.view
-            }
-            it("Navigates to the dashboard page when tapped") {
-                welcomeVC.welcomeButton.sendActions(for: .touchUpInside)
-                
-            }
-        }
     }
 }

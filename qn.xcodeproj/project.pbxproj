@@ -48,6 +48,9 @@
 		BD81E26B25C845FD0088FB15 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E26A25C845FD0088FB15 /* DonutChart.swift */; };
 		BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */; };
 		BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */; };
+		BD81E2C425C8B0E70088FB15 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD81E2C325C8B0E70088FB15 /* README.md */; };
+		BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2CC25C8B6040088FB15 /* AppConfig.swift */; };
+		BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */; };
 		C6F26E3CC8173F5D596A23DE /* Pods_qnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1ABDB67B7E292628DEEED /* Pods_qnTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +129,9 @@
 		BD81E26A25C845FD0088FB15 /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
 		BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSpecs.swift; sourceTree = "<group>"; };
+		BD81E2C325C8B0E70088FB15 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		BD81E2CC25C8B6040088FB15 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Instantiate.swift"; sourceTree = "<group>"; };
 		BD96E55825C748A80047376E /* prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prod.plist; sourceTree = "<group>"; };
 		BD96E55925C748B00047376E /* prodConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prodConfig.xcconfig; sourceTree = "<group>"; };
 		C3B1ABDB67B7E292628DEEED /* Pods_qnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,7 +292,6 @@
 			children = (
 				BD0B8EFC25C5B55B0081A183 /* Dashboard */,
 				BD0B8F1225C5B5E30081A183 /* Report */,
-				BD35B03C25C58ADF00BF4D03 /* TabBar */,
 				BD35AF7C25C32E3F00BF4D03 /* Welcome */,
 			);
 			path = Flows;
@@ -295,6 +300,7 @@
 		BD35AF7825C32E2000BF4D03 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				BD35B03C25C58ADF00BF4D03 /* TabBar */,
 				BD35AF7F25C32E5C00BF4D03 /* Coordinator.swift */,
 				BD35AF8425C32E6600BF4D03 /* MainCoordinator.swift */,
 				BD35AF8925C32E7100BF4D03 /* Storyboarded.swift */,
@@ -306,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */,
+				BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,6 +331,7 @@
 			children = (
 				BD0B8F4725C717240081A183 /* ReportService.swift */,
 				BD7638ED25C76BFE0013AFE1 /* Error.swift */,
+				BD81E2CC25C8B6040088FB15 /* AppConfig.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -414,15 +422,15 @@
 		BD5D112725C3200F00432634 /* qn */ = {
 			isa = PBXGroup;
 			children = (
-				BD76390225C78E220013AFE1 /* UITools */,
+				BD81E2C325C8B0E70088FB15 /* README.md */,
+				BD81E2CB25C8B57C0088FB15 /* Application */,
 				BD0B8F4C25C718CF0081A183 /* Resources */,
 				BD35AF7B25C32E2F00BF4D03 /* Service */,
 				BD35AF7A25C32E2B00BF4D03 /* Model */,
 				BD35AF7925C32E2700BF4D03 /* Extensions */,
 				BD35AF7825C32E2000BF4D03 /* Navigation */,
+				BD76390225C78E220013AFE1 /* UITools */,
 				BD35AF7725C32E1D00BF4D03 /* Flows */,
-				BD5D112825C3200F00432634 /* AppDelegate.swift */,
-				BD5D112A25C3200F00432634 /* SceneDelegate.swift */,
 				BD5D113325C3201000432634 /* LaunchScreen.storyboard */,
 			);
 			path = qn;
@@ -485,6 +493,15 @@
 				BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */,
 			);
 			path = DashboardTests;
+			sourceTree = "<group>";
+		};
+		BD81E2CB25C8B57C0088FB15 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D112825C3200F00432634 /* AppDelegate.swift */,
+				BD5D112A25C3200F00432634 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +612,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD81E2C425C8B0E70088FB15 /* README.md in Resources */,
 				BD5D113525C3201000432634 /* LaunchScreen.storyboard in Resources */,
 				BD5D113225C3201000432634 /* Assets.xcassets in Resources */,
 				BD35AF9A25C32F1E00BF4D03 /* Welcome.storyboard in Resources */,
@@ -734,6 +752,7 @@
 				BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */,
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
+				BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */,
 				BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */,
 				BD7638D325C768E00013AFE1 /* DashboardStatus.swift in Sources */,
 				BD0B8F1725C5B5F80081A183 /* ReportCoordinator.swift in Sources */,
@@ -747,6 +766,7 @@
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
 				BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */,
 				BD35B03E25C58B1B00BF4D03 /* TabBarCoordinator.swift in Sources */,
+				BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */,
 				BD5D112B25C3200F00432634 /* SceneDelegate.swift in Sources */,
 				BD0B8F0125C5B57B0081A183 /* DashboardViewController.swift in Sources */,
 				BD7638BD25C765040013AFE1 /* CreditReport.swift in Sources */,

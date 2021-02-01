@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         return MainCoordinator(navigationController: navigationController)
     }
-    
+    ///Creates the Main Coordinator and kicks the application flow off
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
