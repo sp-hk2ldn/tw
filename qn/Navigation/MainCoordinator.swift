@@ -24,10 +24,15 @@ final class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelega
         welcomeCoordinator.start()
     }
     
-    
-    
     func navigateToTabBar() {
         let tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
         tabBarCoordinator.start()
     }    
+}
+
+extension MainCoordinator {
+    func showError(error: APIError) {
+        navigationController.children.first?
+            .showGenericAlert(with: error.localizedDescription, message: error.localizedDescription)
+    }
 }

@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import qn
-
+// swiftlint:disable all
 class qnTests: XCTestCase {
 
     override func setUpWithError() throws {

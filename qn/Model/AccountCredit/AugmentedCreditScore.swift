@@ -8,6 +8,5 @@
 import Foundation
 
 enum AugmentedCreditScore: String, Decodable {
-    case something //Sorry, dunno what this is
+    case something //Dunno what this is!
 }
-

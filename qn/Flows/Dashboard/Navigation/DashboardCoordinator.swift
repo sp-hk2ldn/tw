@@ -18,10 +18,10 @@ class DashboardCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = DashboardViewModel(reportService: ReportService())
-        let vc = DashboardViewController.instantiate(sb: "Dashboard")
-        vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        let viewModel = DashboardViewModel(accountService: AccountService())
+        let dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
+        dashboardVC.viewModel = viewModel
+        navigationController.pushViewController(dashboardVC, animated: true)
     }
     
     

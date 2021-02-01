@@ -6,19 +6,34 @@
 //
 
 import Foundation
-import Combine
 
 class DashboardViewModel {
     
-    var reportService: ReportServiceProtocol
+    private var accountService: AccountServiceProtocol!
     
-    init(reportService: ReportServiceProtocol) {
-        self.reportService = reportService
+    var creditScore: Int?
+    var maxCreditScore: Int?
+    
+    private var account: Account? {
+        didSet {
+            self.creditScore = account?.creditReportInfo.score
+            self.maxCreditScore = account?.creditReportInfo.maxScoreValue
+        }
     }
     
-    func getReport() {
-        reportService.getCreditReport { (res) in
-            print(res)
+    init(accountService: AccountServiceProtocol) {
+        self.accountService = accountService
+    }
+    
+    func getAccount(completion: @escaping ((APIError?) -> Void)) {
+        accountService.getAccount { [weak self] (result) in
+            switch result {
+            case .failure(let error):
+                completion(error)
+            case .success(let account):
+                self?.account = account
+                completion(nil)
+            }
         }
     }
 }

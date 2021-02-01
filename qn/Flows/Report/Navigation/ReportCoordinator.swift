@@ -19,9 +19,9 @@ class ReportCoordinator: Coordinator {
     
     func start() {
         let viewModel = ReportViewModel()
-        let vc = ReportViewController.instantiate(sb: "Report")
-        vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        let reportVC = ReportViewController.instantiate(storyboard: "Report")
+        reportVC.viewModel = viewModel
+        navigationController.pushViewController(reportVC, animated: true)
     }
     
     

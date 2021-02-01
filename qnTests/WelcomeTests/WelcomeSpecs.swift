@@ -13,12 +13,12 @@ class WelcomeSpecs: QuickSpec {
     override func spec() {
         var welcomeVC: WelcomeViewController!
         beforeEach {
-            welcomeVC = WelcomeViewController.instantiate(sb: "Welcome")
+            welcomeVC = WelcomeViewController.instantiate(storyboard: "Welcome")
         }
         
         describe("The welcome screen") {
             beforeEach {
-                let _ = welcomeVC.view
+                _ = welcomeVC.view
             }
             
             it("Has a welcome button") {
@@ -28,7 +28,7 @@ class WelcomeSpecs: QuickSpec {
         
         describe("The welcome button") {
             beforeEach {
-                let _ = welcomeVC.view
+                _ = welcomeVC.view
             }
             it("Navigates to the dashboard page when tapped") {
                 welcomeVC.welcomeButton.sendActions(for: .touchUpInside)
@@ -37,4 +37,3 @@ class WelcomeSpecs: QuickSpec {
         }
     }
 }
-

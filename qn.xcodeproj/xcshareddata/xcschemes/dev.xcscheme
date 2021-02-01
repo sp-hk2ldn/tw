@@ -35,7 +35,7 @@
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
@@ -63,16 +63,6 @@
                BlueprintIdentifier = "BD5D113A25C3201000432634"
                BuildableName = "qnTests.xctest"
                BlueprintName = "qnTests"
-               ReferencedContainer = "container:qn.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD5D114525C3201000432634"
-               BuildableName = "qnUITests.xctest"
-               BlueprintName = "qnUITests"
                ReferencedContainer = "container:qn.xcodeproj">
             </BuildableReference>
          </TestableReference>

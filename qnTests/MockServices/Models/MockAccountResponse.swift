@@ -1,5 +1,5 @@
 //
-//  MockAccountCreditResponse.swift
+//  MockAccountResponse.swift
 //  qnTests
 //
 //  Created by Stephen Parker on 1/2/2021.
@@ -8,8 +8,8 @@
 @testable import qn
 import Foundation
 
-class MockAccountCreditResponse {
-    func getAccountCreditResponse() -> AccountCredit {
+class MockAccountResponse {
+    func getAccountResponse() -> Account {
         let idvStatus: IDVStatus = .pass
         
         let scoreBand: ScoreBand = .poor
@@ -28,7 +28,7 @@ class MockAccountCreditResponse {
         let augmentedScore: AugmentedCreditScore = .something
         
         let creditReportInfo = CreditReport(
-            score: 2,
+            score: 55,
             scoreBand: 210,
             clientRef: "TH-ISI-5EMAED555-UP2222",
             status: "MATCH",
@@ -56,7 +56,7 @@ class MockAccountCreditResponse {
             equifaxScoreBandDescription: scoreBand,
             daysUntilNextReport: 20)
         
-        let accountCredit = AccountCredit(
+        let account = Account(
             accountIDVStatus: idvStatus,
             creditReportInfo: creditReportInfo,
             dashboardStatus: dashboardStatus,
@@ -65,6 +65,6 @@ class MockAccountCreditResponse {
             augmentedCreditScore: augmentedScore
         )
         
-        return accountCredit
+        return account
     }
 }

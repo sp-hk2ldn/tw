@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum IDVStatus: String, Decodable  {
+enum IDVStatus: String, Decodable {
     case pass = "PASS"
     case fail = "FAIL"
     case pending = "PENDING"

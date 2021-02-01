@@ -8,9 +8,9 @@
 import Foundation
 
 enum ScoreBand: String, Decodable {
-    case veryPoor
-    case poor
-    case fair
-    case good
-    case excellent
+    case veryPoor = "Very Poor"
+    case poor = "Poor"
+    case fair = "Fair"
+    case good = "Good"
+    case excellent = "Excellent"
 }

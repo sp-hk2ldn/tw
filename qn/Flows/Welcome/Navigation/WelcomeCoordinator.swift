@@ -22,9 +22,9 @@ class WelcomeCoordinator: Coordinator {
     
     func start() {
         let viewModel = WelcomeViewModel(coordinator: self)
-        let vc = WelcomeViewController.instantiate(sb: "Welcome")
-        vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        let welcomeVC = WelcomeViewController.instantiate(storyboard: "Welcome")
+        welcomeVC.viewModel = viewModel
+        navigationController.pushViewController(welcomeVC, animated: true)
     }
     
     func navigateToTabBar() {

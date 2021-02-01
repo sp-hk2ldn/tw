@@ -44,7 +44,10 @@
 		BD7638DD25C7691C0013AFE1 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638DC25C7691C0013AFE1 /* CoachingSummary.swift */; };
 		BD7638E225C769580013AFE1 /* AugmentedCreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638E125C769580013AFE1 /* AugmentedCreditScore.swift */; };
 		BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638ED25C76BFE0013AFE1 /* Error.swift */; };
-		BD7638F825C787260013AFE1 /* MockAccountCreditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638F725C787260013AFE1 /* MockAccountCreditResponse.swift */; };
+		BD7638F825C787260013AFE1 /* MockAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638F725C787260013AFE1 /* MockAccountResponse.swift */; };
+		BD81E26B25C845FD0088FB15 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E26A25C845FD0088FB15 /* DonutChart.swift */; };
+		BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */; };
+		BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */; };
 		C6F26E3CC8173F5D596A23DE /* Pods_qnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1ABDB67B7E292628DEEED /* Pods_qnTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,7 +122,10 @@
 		BD7638DC25C7691C0013AFE1 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
 		BD7638E125C769580013AFE1 /* AugmentedCreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedCreditScore.swift; sourceTree = "<group>"; };
 		BD7638ED25C76BFE0013AFE1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		BD7638F725C787260013AFE1 /* MockAccountCreditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAccountCreditResponse.swift; sourceTree = "<group>"; };
+		BD7638F725C787260013AFE1 /* MockAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAccountResponse.swift; sourceTree = "<group>"; };
+		BD81E26A25C845FD0088FB15 /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
+		BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSpecs.swift; sourceTree = "<group>"; };
 		BD96E55825C748A80047376E /* prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prod.plist; sourceTree = "<group>"; };
 		BD96E55925C748B00047376E /* prodConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prodConfig.xcconfig; sourceTree = "<group>"; };
 		C3B1ABDB67B7E292628DEEED /* Pods_qnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +305,7 @@
 		BD35AF7925C32E2700BF4D03 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -407,6 +414,7 @@
 		BD5D112725C3200F00432634 /* qn */ = {
 			isa = PBXGroup;
 			children = (
+				BD76390225C78E220013AFE1 /* UITools */,
 				BD0B8F4C25C718CF0081A183 /* Resources */,
 				BD35AF7B25C32E2F00BF4D03 /* Service */,
 				BD35AF7A25C32E2B00BF4D03 /* Model */,
@@ -423,9 +431,10 @@
 		BD5D113E25C3201000432634 /* qnTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD35AF6B25C32AC400BF4D03 /* WelcomeTests */,
+				BD81E2AA25C8A5290088FB15 /* DashboardTests */,
 				BD35B03125C5769B00BF4D03 /* MockServices */,
 				BD5D113F25C3201000432634 /* qnTests.swift */,
-				BD35AF6B25C32AC400BF4D03 /* WelcomeTests */,
 				BD5D114125C3201000432634 /* Info.plist */,
 			);
 			path = qnTests;
@@ -457,9 +466,25 @@
 		BD7638F625C7871B0013AFE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BD7638F725C787260013AFE1 /* MockAccountCreditResponse.swift */,
+				BD7638F725C787260013AFE1 /* MockAccountResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BD76390225C78E220013AFE1 /* UITools */ = {
+			isa = PBXGroup;
+			children = (
+				BD81E26A25C845FD0088FB15 /* DonutChart.swift */,
+			);
+			path = UITools;
+			sourceTree = "<group>";
+		};
+		BD81E2AA25C8A5290088FB15 /* DashboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */,
+			);
+			path = DashboardTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +498,7 @@
 				BD5D112125C3200F00432634 /* Sources */,
 				BD5D112225C3200F00432634 /* Frameworks */,
 				BD5D112325C3200F00432634 /* Resources */,
+				BD81E2BF25C8AE370088FB15 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -677,6 +703,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qnTests/Pods-qnTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD81E2BF25C8AE370088FB15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -687,6 +730,7 @@
 				BD7638D825C769000013AFE1 /* Persona.swift in Sources */,
 				BD0B8F0E25C5B59E0081A183 /* DashboardCoordinator.swift in Sources */,
 				BD35B04325C5966E00BF4D03 /* TabBarController.swift in Sources */,
+				BD81E26B25C845FD0088FB15 /* DonutChart.swift in Sources */,
 				BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */,
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
@@ -699,6 +743,7 @@
 				BD0B8F2725C5B6480081A183 /* ReportViewModel.swift in Sources */,
 				BD7638C925C7659F0013AFE1 /* IDVStatus.swift in Sources */,
 				BD0B8F2225C5B6340081A183 /* ReportViewController.swift in Sources */,
+				BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */,
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
 				BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */,
 				BD35B03E25C58B1B00BF4D03 /* TabBarCoordinator.swift in Sources */,
@@ -719,7 +764,8 @@
 			files = (
 				BD7638B525C7628E0013AFE1 /* MockReportService.swift in Sources */,
 				BD5D114025C3201000432634 /* qnTests.swift in Sources */,
-				BD7638F825C787260013AFE1 /* MockAccountCreditResponse.swift in Sources */,
+				BD7638F825C787260013AFE1 /* MockAccountResponse.swift in Sources */,
+				BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */,
 				BD35AF6D25C32B2A00BF4D03 /* WelcomeSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
