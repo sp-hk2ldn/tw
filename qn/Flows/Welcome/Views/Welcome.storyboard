@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ie-os-LKL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="2Y9-nW-fuM">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="7ie-os-LKL" customClass="WelcomeViewController" customModule="qn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="WelcomeViewController" id="9rG-Tk-lVo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgO-lf-bfR">
+                                <rect key="frame" x="175" y="438" width="64" height="30"/>
+                                <state key="normal" title="Welcome"/>
+                                <connections>
+                                    <action selector="navigateToDashboard:" destination="7ie-os-LKL" eventType="touchUpInside" id="Rgy-im-AIQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gfV-x5-oey"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TgO-lf-bfR" firstAttribute="centerX" secondItem="gfV-x5-oey" secondAttribute="centerX" id="4aE-aA-phO"/>
+                            <constraint firstItem="TgO-lf-bfR" firstAttribute="centerY" secondItem="gfV-x5-oey" secondAttribute="centerY" id="yW0-eq-hnb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeButton" destination="TgO-lf-bfR" id="A71-hy-vfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smL-FA-x2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="115"/>
+        </scene>
+    </scenes>
+</document>
