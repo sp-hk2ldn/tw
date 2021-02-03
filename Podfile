@@ -1,16 +1,16 @@
 platform :ios, '13.0'
 
-target 'qn' do
+target 'tw' do
   use_frameworks!
   pod 'SwiftLint'
 
-  target 'qnTests' do
+  target 'twTests' do
     inherit! :search_paths
     pod 'Nimble'
     pod 'Quick'
   end
 
-  target 'qnUITests' do
+  target 'twUITests' do
   end
 end
 

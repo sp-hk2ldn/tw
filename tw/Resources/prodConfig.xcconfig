@@ -1,0 +1,12 @@
+//
+//  prod.xcconfig
+//  tw
+//
+//  Created by Stephen Parker on 31/1/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+rest_protocol = https:/$()/
+host = placeholder
