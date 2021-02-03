@@ -1,6 +1,0 @@
-framework module Pods_qnTests {
-  umbrella header "Pods-qnTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
