@@ -1,13 +1,13 @@
 //
-//  qnUITests.swift
-//  qnUITests
+//  twUITests.swift
+//  twUITests
 //
 //  Created by Stephen Parker on 28/1/2021.
 //
 
 import XCTest
 // swiftlint:disable all
-class qnUITests: XCTestCase {
+class twUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
