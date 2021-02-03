@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Report-->
+        <!--Profile-->
         <scene sceneID="a5X-Mk-qjT">
             <objects>
-                <viewController storyboardIdentifier="ReportViewController" title="Report" id="HFP-Wg-GV2" customClass="ReportViewController" customModule="qn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="Profile" id="HFP-Wg-GV2" customClass="ProfileViewController" customModule="qn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oD3-Ks-7sI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

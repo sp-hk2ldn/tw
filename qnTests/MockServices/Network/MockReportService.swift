@@ -8,9 +8,9 @@
 @testable import qn
 import Foundation
 
-class MockAccountService: AccountServiceProtocol {
-    func getAccount(completion: @escaping ((Result<Account, APIError>) -> Void)) {
-        completion(.success(MockAccountResponse().getAccountResponse()))
+class MockUserService: UserServiceProtocol {
+    func getUser(completion: @escaping ((Result<User, APIError>) -> Void)) {
+        completion(.success(MockUserResponse().getUserResponse()))
     }   
     
 }

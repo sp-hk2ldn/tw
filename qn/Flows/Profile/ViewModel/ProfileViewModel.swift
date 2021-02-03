@@ -7,6 +7,6 @@
 
 import Foundation
 
-class ReportViewModel {
+class ProfileViewModel {
     
 }

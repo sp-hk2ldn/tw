@@ -1,5 +1,5 @@
 //
-//  AccountService.swift
+//  UserService.swift
 //  qn
 //
 //  Created by Stephen Parker on 31/1/2021.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol AccountServiceProtocol {
+protocol UserServiceProtocol {
     ///Provide functionality to retrieve a users account
-    func getAccount(completion: @escaping ((Result<Account, APIError>) -> Void))
+    func getUser(completion: @escaping ((Result<User, APIError>) -> Void))
 }
 
-class AccountService: AccountServiceProtocol {
+class UserService: UserServiceProtocol {
     
-    func getAccount(completion: @escaping ((Result<Account, APIError>) -> Void)) {
-        guard let url = URL(string: AppConfig().baseURL() + "/mockcredit/values") else { fatalError() }
+    func getUser(completion: @escaping ((Result<User, APIError>) -> Void)) {
+        guard let url = URL(string: AppConfig().baseURL()) else { fatalError() }
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             DispatchQueue.main.async {
                 guard let data = data else {
@@ -28,7 +28,7 @@ class AccountService: AccountServiceProtocol {
                 }
                 let decoder = JSONDecoder()
                 let result = Result(catching: {
-                    try decoder.decode(Account.self, from: data)
+                    try decoder.decode(User.self, from: data)
                 }).mapError { APIError(error: $0) }
                 completion((result))
             }

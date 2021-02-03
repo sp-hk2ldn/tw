@@ -12,12 +12,12 @@
 		BD0B8F0125C5B57B0081A183 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F0025C5B57B0081A183 /* DashboardViewController.swift */; };
 		BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F0825C5B5900081A183 /* DashboardViewModel.swift */; };
 		BD0B8F0E25C5B59E0081A183 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F0D25C5B59E0081A183 /* DashboardCoordinator.swift */; };
-		BD0B8F1725C5B5F80081A183 /* ReportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F1625C5B5F80081A183 /* ReportCoordinator.swift */; };
-		BD0B8F2225C5B6340081A183 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F2125C5B6340081A183 /* ReportViewController.swift */; };
-		BD0B8F2725C5B6480081A183 /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F2625C5B6480081A183 /* ReportViewModel.swift */; };
+		BD0B8F1725C5B5F80081A183 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F1625C5B5F80081A183 /* ProfileCoordinator.swift */; };
+		BD0B8F2225C5B6340081A183 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F2125C5B6340081A183 /* ProfileViewController.swift */; };
+		BD0B8F2725C5B6480081A183 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F2625C5B6480081A183 /* ProfileViewModel.swift */; };
 		BD0B8F2C25C5B7580081A183 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0B8F2B25C5B7580081A183 /* Dashboard.storyboard */; };
-		BD0B8F3125C5B84B0081A183 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0B8F3025C5B84B0081A183 /* Report.storyboard */; };
-		BD0B8F4825C717240081A183 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F4725C717240081A183 /* ReportService.swift */; };
+		BD0B8F3125C5B84B0081A183 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0B8F3025C5B84B0081A183 /* Profile.storyboard */; };
+		BD0B8F4825C717240081A183 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B8F4725C717240081A183 /* UserService.swift */; };
 		BD35AF6D25C32B2A00BF4D03 /* WelcomeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35AF6C25C32B2A00BF4D03 /* WelcomeSpecs.swift */; };
 		BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35AF7F25C32E5C00BF4D03 /* Coordinator.swift */; };
 		BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35AF8425C32E6600BF4D03 /* MainCoordinator.swift */; };
@@ -35,17 +35,9 @@
 		BD5D114025C3201000432634 /* qnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D113F25C3201000432634 /* qnTests.swift */; };
 		BD5D114B25C3201000432634 /* qnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D114A25C3201000432634 /* qnUITests.swift */; };
 		BD7638B525C7628E0013AFE1 /* MockReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638B425C7628E0013AFE1 /* MockReportService.swift */; };
-		BD7638BD25C765040013AFE1 /* CreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638BC25C765040013AFE1 /* CreditReport.swift */; };
-		BD7638C325C765360013AFE1 /* AccountCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638C225C765360013AFE1 /* AccountCredit.swift */; };
-		BD7638C925C7659F0013AFE1 /* IDVStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638C825C7659F0013AFE1 /* IDVStatus.swift */; };
-		BD7638CE25C768460013AFE1 /* ScoreBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638CD25C768460013AFE1 /* ScoreBand.swift */; };
-		BD7638D325C768E00013AFE1 /* DashboardStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638D225C768E00013AFE1 /* DashboardStatus.swift */; };
-		BD7638D825C769000013AFE1 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638D725C769000013AFE1 /* Persona.swift */; };
-		BD7638DD25C7691C0013AFE1 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638DC25C7691C0013AFE1 /* CoachingSummary.swift */; };
-		BD7638E225C769580013AFE1 /* AugmentedCreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638E125C769580013AFE1 /* AugmentedCreditScore.swift */; };
+		BD7638C325C765360013AFE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638C225C765360013AFE1 /* User.swift */; };
 		BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638ED25C76BFE0013AFE1 /* Error.swift */; };
 		BD7638F825C787260013AFE1 /* MockAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638F725C787260013AFE1 /* MockAccountResponse.swift */; };
-		BD81E26B25C845FD0088FB15 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E26A25C845FD0088FB15 /* DonutChart.swift */; };
 		BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */; };
 		BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */; };
 		BD81E2C425C8B0E70088FB15 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD81E2C325C8B0E70088FB15 /* README.md */; };
@@ -86,12 +78,12 @@
 		BD0B8F0025C5B57B0081A183 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = qn/Flows/Dashboard/Navigation/DashboardViewController.swift; sourceTree = SOURCE_ROOT; };
 		BD0B8F0825C5B5900081A183 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		BD0B8F0D25C5B59E0081A183 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
-		BD0B8F1625C5B5F80081A183 /* ReportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCoordinator.swift; sourceTree = "<group>"; };
-		BD0B8F2125C5B6340081A183 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		BD0B8F2625C5B6480081A183 /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		BD0B8F1625C5B5F80081A183 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		BD0B8F2125C5B6340081A183 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BD0B8F2625C5B6480081A183 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		BD0B8F2B25C5B7580081A183 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
-		BD0B8F3025C5B84B0081A183 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
-		BD0B8F4725C717240081A183 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
+		BD0B8F3025C5B84B0081A183 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BD0B8F4725C717240081A183 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BD0B8F9425C7190E0081A183 /* devConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = devConfig.xcconfig; sourceTree = "<group>"; };
 		BD35AF6C25C32B2A00BF4D03 /* WelcomeSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSpecs.swift; sourceTree = "<group>"; };
 		BD35AF7F25C32E5C00BF4D03 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -116,17 +108,9 @@
 		BD5D114A25C3201000432634 /* qnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qnUITests.swift; sourceTree = "<group>"; };
 		BD5D114C25C3201000432634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7638B425C7628E0013AFE1 /* MockReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReportService.swift; sourceTree = "<group>"; };
-		BD7638BC25C765040013AFE1 /* CreditReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReport.swift; sourceTree = "<group>"; };
-		BD7638C225C765360013AFE1 /* AccountCredit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCredit.swift; sourceTree = "<group>"; };
-		BD7638C825C7659F0013AFE1 /* IDVStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDVStatus.swift; sourceTree = "<group>"; };
-		BD7638CD25C768460013AFE1 /* ScoreBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBand.swift; sourceTree = "<group>"; };
-		BD7638D225C768E00013AFE1 /* DashboardStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStatus.swift; sourceTree = "<group>"; };
-		BD7638D725C769000013AFE1 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
-		BD7638DC25C7691C0013AFE1 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
-		BD7638E125C769580013AFE1 /* AugmentedCreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedCreditScore.swift; sourceTree = "<group>"; };
+		BD7638C225C765360013AFE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD7638ED25C76BFE0013AFE1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		BD7638F725C787260013AFE1 /* MockAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAccountResponse.swift; sourceTree = "<group>"; };
-		BD81E26A25C845FD0088FB15 /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
 		BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSpecs.swift; sourceTree = "<group>"; };
 		BD81E2C325C8B0E70088FB15 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -232,20 +216,20 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		BD0B8F1225C5B5E30081A183 /* Report */ = {
+		BD0B8F1225C5B5E30081A183 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				BD0B8F1525C5B5EE0081A183 /* Navigation */,
 				BD0B8F1425C5B5EB0081A183 /* View */,
 				BD0B8F1325C5B5E70081A183 /* ViewModel */,
 			);
-			path = Report;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		BD0B8F1325C5B5E70081A183 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BD0B8F2625C5B6480081A183 /* ReportViewModel.swift */,
+				BD0B8F2625C5B6480081A183 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -253,8 +237,8 @@
 		BD0B8F1425C5B5EB0081A183 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD0B8F2125C5B6340081A183 /* ReportViewController.swift */,
-				BD0B8F3025C5B84B0081A183 /* Report.storyboard */,
+				BD0B8F2125C5B6340081A183 /* ProfileViewController.swift */,
+				BD0B8F3025C5B84B0081A183 /* Profile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,7 +246,7 @@
 		BD0B8F1525C5B5EE0081A183 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				BD0B8F1625C5B5F80081A183 /* ReportCoordinator.swift */,
+				BD0B8F1625C5B5F80081A183 /* ProfileCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -291,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0B8EFC25C5B55B0081A183 /* Dashboard */,
-				BD0B8F1225C5B5E30081A183 /* Report */,
+				BD0B8F1225C5B5E30081A183 /* Profile */,
 				BD35AF7C25C32E3F00BF4D03 /* Welcome */,
 			);
 			path = Flows;
@@ -320,8 +304,7 @@
 		BD35AF7A25C32E2B00BF4D03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BD7638C225C765360013AFE1 /* AccountCredit.swift */,
-				BD7638E925C769BB0013AFE1 /* AccountCredit */,
+				BD7638C225C765360013AFE1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,7 +312,7 @@
 		BD35AF7B25C32E2F00BF4D03 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				BD0B8F4725C717240081A183 /* ReportService.swift */,
+				BD0B8F4725C717240081A183 /* UserService.swift */,
 				BD7638ED25C76BFE0013AFE1 /* Error.swift */,
 				BD81E2CC25C8B6040088FB15 /* AppConfig.swift */,
 			);
@@ -429,7 +412,6 @@
 				BD35AF7A25C32E2B00BF4D03 /* Model */,
 				BD35AF7925C32E2700BF4D03 /* Extensions */,
 				BD35AF7825C32E2000BF4D03 /* Navigation */,
-				BD76390225C78E220013AFE1 /* UITools */,
 				BD35AF7725C32E1D00BF4D03 /* Flows */,
 				BD5D113325C3201000432634 /* LaunchScreen.storyboard */,
 			);
@@ -457,34 +439,12 @@
 			path = qnUITests;
 			sourceTree = "<group>";
 		};
-		BD7638E925C769BB0013AFE1 /* AccountCredit */ = {
-			isa = PBXGroup;
-			children = (
-				BD7638BC25C765040013AFE1 /* CreditReport.swift */,
-				BD7638C825C7659F0013AFE1 /* IDVStatus.swift */,
-				BD7638CD25C768460013AFE1 /* ScoreBand.swift */,
-				BD7638D225C768E00013AFE1 /* DashboardStatus.swift */,
-				BD7638D725C769000013AFE1 /* Persona.swift */,
-				BD7638DC25C7691C0013AFE1 /* CoachingSummary.swift */,
-				BD7638E125C769580013AFE1 /* AugmentedCreditScore.swift */,
-			);
-			path = AccountCredit;
-			sourceTree = "<group>";
-		};
 		BD7638F625C7871B0013AFE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BD7638F725C787260013AFE1 /* MockAccountResponse.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		BD76390225C78E220013AFE1 /* UITools */ = {
-			isa = PBXGroup;
-			children = (
-				BD81E26A25C845FD0088FB15 /* DonutChart.swift */,
-			);
-			path = UITools;
 			sourceTree = "<group>";
 		};
 		BD81E2AA25C8A5290088FB15 /* DashboardTests */ = {
@@ -617,7 +577,7 @@
 				BD5D113225C3201000432634 /* Assets.xcassets in Resources */,
 				BD35AF9A25C32F1E00BF4D03 /* Welcome.storyboard in Resources */,
 				BD0B8F2C25C5B7580081A183 /* Dashboard.storyboard in Resources */,
-				BD0B8F3125C5B84B0081A183 /* Report.storyboard in Resources */,
+				BD0B8F3125C5B84B0081A183 /* Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,23 +705,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7638D825C769000013AFE1 /* Persona.swift in Sources */,
 				BD0B8F0E25C5B59E0081A183 /* DashboardCoordinator.swift in Sources */,
 				BD35B04325C5966E00BF4D03 /* TabBarController.swift in Sources */,
-				BD81E26B25C845FD0088FB15 /* DonutChart.swift in Sources */,
 				BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */,
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
 				BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */,
 				BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */,
-				BD7638D325C768E00013AFE1 /* DashboardStatus.swift in Sources */,
-				BD0B8F1725C5B5F80081A183 /* ReportCoordinator.swift in Sources */,
-				BD7638E225C769580013AFE1 /* AugmentedCreditScore.swift in Sources */,
+				BD0B8F1725C5B5F80081A183 /* ProfileCoordinator.swift in Sources */,
 				BD35B03825C57FC400BF4D03 /* WelcomeCoordinator.swift in Sources */,
-				BD7638DD25C7691C0013AFE1 /* CoachingSummary.swift in Sources */,
-				BD0B8F2725C5B6480081A183 /* ReportViewModel.swift in Sources */,
-				BD7638C925C7659F0013AFE1 /* IDVStatus.swift in Sources */,
-				BD0B8F2225C5B6340081A183 /* ReportViewController.swift in Sources */,
+				BD0B8F2725C5B6480081A183 /* ProfileViewModel.swift in Sources */,
+				BD0B8F2225C5B6340081A183 /* ProfileViewController.swift in Sources */,
 				BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */,
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
 				BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */,
@@ -769,11 +723,9 @@
 				BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */,
 				BD5D112B25C3200F00432634 /* SceneDelegate.swift in Sources */,
 				BD0B8F0125C5B57B0081A183 /* DashboardViewController.swift in Sources */,
-				BD7638BD25C765040013AFE1 /* CreditReport.swift in Sources */,
 				BD35AF8A25C32E7100BF4D03 /* Storyboarded.swift in Sources */,
-				BD7638CE25C768460013AFE1 /* ScoreBand.swift in Sources */,
-				BD0B8F4825C717240081A183 /* ReportService.swift in Sources */,
-				BD7638C325C765360013AFE1 /* AccountCredit.swift in Sources */,
+				BD0B8F4825C717240081A183 /* UserService.swift in Sources */,
+				BD7638C325C765360013AFE1 /* User.swift in Sources */,
 				BD35AF8F25C32EEB00BF4D03 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

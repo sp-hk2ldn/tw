@@ -9,29 +9,20 @@ import Foundation
 
 class DashboardViewModel {
     
-    private var accountService: AccountServiceProtocol!
+    private var userService: UserServiceProtocol!
+    private var user: User?
     
-    var creditScore: Int?
-    var maxCreditScore: Int?
-    
-    private var account: Account? {
-        didSet {
-            self.creditScore = account?.creditReportInfo.score
-            self.maxCreditScore = account?.creditReportInfo.maxScoreValue
-        }
+    init(userService: UserServiceProtocol) {
+        self.userService = userService
     }
     
-    init(accountService: AccountServiceProtocol) {
-        self.accountService = accountService
-    }
-    
-    func getAccount(completion: @escaping ((APIError?) -> Void)) {
-        accountService.getAccount { [weak self] (result) in
+    func getUser(completion: @escaping ((APIError?) -> Void)) {
+        userService.getUser { [weak self] (result) in
             switch result {
             case .failure(let error):
                 completion(error)
-            case .success(let account):
-                self?.account = account
+            case .success(let user):
+                self?.user = user
                 completion(nil)
             }
         }

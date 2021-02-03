@@ -18,7 +18,7 @@ class DashboardCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = DashboardViewModel(accountService: AccountService())
+        let viewModel = DashboardViewModel(userService: UserService())
         let dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
         dashboardVC.viewModel = viewModel
         navigationController.pushViewController(dashboardVC, animated: true)

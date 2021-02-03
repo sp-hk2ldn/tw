@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ReportCoordinator: Coordinator {
+class ProfileCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
@@ -18,10 +18,10 @@ class ReportCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = ReportViewModel()
-        let reportVC = ReportViewController.instantiate(storyboard: "Report")
-        reportVC.viewModel = viewModel
-        navigationController.pushViewController(reportVC, animated: true)
+        let viewModel = ProfileViewModel()
+        let profileVC = ProfileViewController.instantiate(storyboard: "Profile")
+        profileVC.viewModel = viewModel
+        navigationController.pushViewController(profileVC, animated: true)
     }
     
     

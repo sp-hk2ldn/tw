@@ -30,7 +30,7 @@ final class TabBarCoordinator: Coordinator {
         
         let reportNavigationController = UINavigationController()
         reportNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
-        let reportCoordinator = ReportCoordinator(navigationController: reportNavigationController)
+        let reportCoordinator = ProfileCoordinator(navigationController: reportNavigationController)
         
         tabBarController.viewControllers = [dashboardNavigationController, reportNavigationController]
         
