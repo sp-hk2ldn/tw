@@ -16,6 +16,12 @@ class DashboardViewController: UIViewController, Storyboarded {
     @IBOutlet weak var repositoryCountLabel: UILabel!
     @IBOutlet weak var followerCountLabel: UILabel!
     @IBOutlet weak var followingCountLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
     
     var viewModel: DashboardViewModel?
     
@@ -30,5 +36,22 @@ class DashboardViewController: UIViewController, Storyboarded {
         followerCountLabel.text = viewModel?.followers
         followingCountLabel.text = viewModel?.following
         repositoryCountLabel.text = viewModel?.repositoryCount
+        tableView.reloadData()
     }
+}
+
+extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel?.repositories.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell else { return UITableViewCell() }
+        guard let repo = viewModel?.repositories[indexPath.row] else { return cell }
+        cell.configureCell(with: repo)
+        return cell
+    }
+    
+    
 }

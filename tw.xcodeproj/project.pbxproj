@@ -46,6 +46,7 @@
 		BDC09BD825CB0307001CEE40 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BD725CB0307001CEE40 /* API.swift */; };
 		BDC09BDD25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */; };
 		BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE125CB4A06001CEE40 /* Repository.swift */; };
+		BDC09BEA25CB7906001CEE40 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */; };
 		BDF285D925CB00C200A05215 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF285D825CB00C200A05215 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 		BDC09BD725CB0307001CEE40 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Utils.swift"; sourceTree = "<group>"; };
 		BDC09BE125CB4A06001CEE40 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		BDF285D825CB00C200A05215 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BE79F29B2988D241FE124B5E /* Pods-twTests.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twTests.release (prod).xcconfig"; path = "Target Support Files/Pods-twTests/Pods-twTests.release (prod).xcconfig"; sourceTree = "<group>"; };
 		D1AE228D6B3F8AFDF2400D65 /* Pods-qn-qnUITests.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qn-qnUITests.release (dev).xcconfig"; path = "Target Support Files/Pods-qn-qnUITests/Pods-qn-qnUITests.release (dev).xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				BDF285D825CB00C200A05215 /* DashboardViewController.swift */,
 				BD0B8F2B25C5B7580081A183 /* Dashboard.storyboard */,
+				BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */,
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
+				BDC09BEA25CB7906001CEE40 /* RepositoryTableViewCell.swift in Sources */,
 				BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */,
 				BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */,
 				BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */,

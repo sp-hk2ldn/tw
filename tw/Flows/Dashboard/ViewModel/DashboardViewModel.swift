@@ -20,7 +20,7 @@ class DashboardViewModel {
             following = "\(user.following)"
         }
     }
-    private var repositories: [Repository] = [] {
+    var repositories: [Repository] = [] {
         didSet {
             repositoryCount = "\(repositories.count)"
         }
