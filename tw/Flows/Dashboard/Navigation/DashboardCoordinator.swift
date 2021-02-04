@@ -15,10 +15,11 @@ class DashboardCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        
     }
     
     func start() {
-        let viewModel = DashboardViewModel(userService: UserService())
+        let viewModel = DashboardViewModel(userService: UserService(), coordinator: self)
         let dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
         dashboardVC.viewModel = viewModel
         navigationController.pushViewController(dashboardVC, animated: true)

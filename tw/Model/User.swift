@@ -8,5 +8,10 @@
 import Foundation
 
 
-struct User: Decodable {    
+struct User: Decodable {
+    let login: String
+    let name: String
+    let location: String?
+    let followers: Int
+    let following: Int
 }

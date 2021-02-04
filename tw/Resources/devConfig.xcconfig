@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 rest_protocol = https:/$()/
-host = placeholder
+host = api.github.com

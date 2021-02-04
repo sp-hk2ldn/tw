@@ -8,15 +8,12 @@
 import Foundation
 
 enum APIError: Error {
+    
     case badURL
+    case serverError
     case notFound
     case notAuthorized
     case generic
-
-    init(error: Error) {
-        switch error.localizedDescription {
-        default:
-            self = .generic
-        }
-    }
+    case unknownError
+    case decodeFailure
 }

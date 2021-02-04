@@ -43,6 +43,9 @@
 		BD81E2C425C8B0E70088FB15 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD81E2C325C8B0E70088FB15 /* README.md */; };
 		BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2CC25C8B6040088FB15 /* AppConfig.swift */; };
 		BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */; };
+		BDC09BD825CB0307001CEE40 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BD725CB0307001CEE40 /* API.swift */; };
+		BDC09BDD25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */; };
+		BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE125CB4A06001CEE40 /* Repository.swift */; };
 		BDF285D925CB00C200A05215 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF285D825CB00C200A05215 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +129,9 @@
 		BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Instantiate.swift"; sourceTree = "<group>"; };
 		BD96E55825C748A80047376E /* prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prod.plist; sourceTree = "<group>"; };
 		BD96E55925C748B00047376E /* prodConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prodConfig.xcconfig; sourceTree = "<group>"; };
+		BDC09BD725CB0307001CEE40 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Utils.swift"; sourceTree = "<group>"; };
+		BDC09BE125CB4A06001CEE40 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BDF285D825CB00C200A05215 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BE79F29B2988D241FE124B5E /* Pods-twTests.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twTests.release (prod).xcconfig"; path = "Target Support Files/Pods-twTests/Pods-twTests.release (prod).xcconfig"; sourceTree = "<group>"; };
 		D1AE228D6B3F8AFDF2400D65 /* Pods-qn-qnUITests.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qn-qnUITests.release (dev).xcconfig"; path = "Target Support Files/Pods-qn-qnUITests/Pods-qn-qnUITests.release (dev).xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +327,7 @@
 			children = (
 				BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */,
 				BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */,
+				BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7638C225C765360013AFE1 /* User.swift */,
+				BDC09BE125CB4A06001CEE40 /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				BD0B8F4725C717240081A183 /* UserService.swift */,
 				BD7638ED25C76BFE0013AFE1 /* Error.swift */,
 				BD81E2CC25C8B6040088FB15 /* AppConfig.swift */,
+				BDC09BD725CB0307001CEE40 /* API.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -735,15 +744,18 @@
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
 				BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */,
+				BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */,
 				BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */,
 				BD0B8F1725C5B5F80081A183 /* ProfileCoordinator.swift in Sources */,
 				BD35B03825C57FC400BF4D03 /* WelcomeCoordinator.swift in Sources */,
 				BD0B8F2725C5B6480081A183 /* ProfileViewModel.swift in Sources */,
 				BD0B8F2225C5B6340081A183 /* ProfileViewController.swift in Sources */,
 				BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */,
+				BDC09BDD25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift in Sources */,
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
 				BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */,
 				BD35B03E25C58B1B00BF4D03 /* TabBarCoordinator.swift in Sources */,
+				BDC09BD825CB0307001CEE40 /* API.swift in Sources */,
 				BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */,
 				BD5D112B25C3200F00432634 /* SceneDelegate.swift in Sources */,
 				BD35AF8A25C32E7100BF4D03 /* Storyboarded.swift in Sources */,

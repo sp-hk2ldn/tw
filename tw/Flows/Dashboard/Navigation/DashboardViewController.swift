@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Combine
 
 final class DashboardViewController: UIViewController, Storyboarded {
     var viewModel: DashboardViewModel?
@@ -21,7 +20,7 @@ final class DashboardViewController: UIViewController, Storyboarded {
             if error != nil {
                 self?.showAlert(with: error!)
             } else {
-                guard let _ = self?.viewModel else {
+                if self?.viewModel == nil {
                     fatalError("No ViewModel")
                 }
                 self?.showAlert(with: .generic)
