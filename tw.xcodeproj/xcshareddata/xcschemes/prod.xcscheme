@@ -8,16 +8,30 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD5D112425C3200F00432634"
-               BuildableName = "qn.app"
-               BlueprintName = "qn"
-               ReferencedContainer = "container:qn.xcodeproj">
+               BlueprintIdentifier = "BD5D113A25C3201000432634"
+               BuildableName = "twTests.xctest"
+               BlueprintName = "twTests"
+               ReferencedContainer = "container:tw.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BD5D114525C3201000432634"
+               BuildableName = "twUITests.xctest"
+               BlueprintName = "twUITests"
+               ReferencedContainer = "container:tw.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,15 +64,6 @@
             ReferencedContainer = "container:tw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD5D112425C3200F00432634"
-            BuildableName = "qn.app"
-            BlueprintName = "qn"
-            ReferencedContainer = "container:qn.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release (dev)"
@@ -66,16 +71,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD5D112425C3200F00432634"
-            BuildableName = "qn.app"
-            BlueprintName = "qn"
-            ReferencedContainer = "container:qn.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug (dev)">

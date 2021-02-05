@@ -12,20 +12,37 @@ import Nimble
 class DashboardSpecs: QuickSpec {
     override func spec() {
         var dashboardVC: DashboardViewController!
-        var userResponse: User!
         var dashboardVM: DashboardViewModel!
+        var dashboardCoordinator: DashboardCoordinator!
         let userService = MockUserService()
         beforeEach {
+            
             dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
-            dashboardVM = DashboardViewModel(userService: userService)
+            dashboardCoordinator = DashboardCoordinator(navigationController: UINavigationController())
+            dashboardVM = DashboardViewModel(userService: userService, coordinator: dashboardCoordinator)
             dashboardVC.viewModel = dashboardVM
         }
         
         describe("The dashboard screen") {
             beforeEach {
                 _ = dashboardVC.view
-                userResponse = MockUserResponse().getUserResponse()
-                dashboardVC.setupView()
+                
+//                dashboardVC.setupView()
+            }
+            it("Has a username") {
+                expect(dashboardVC.usernameLabel?.text).toEventually(equal("Mr Octocat"))
+            }
+            it("Has a location") {
+                expect(dashboardVC.locationLabel?.text).toEventually(equal("The Sea"))
+            }
+            it("Has a repository count") {
+                expect(dashboardVC.repositoryCountLabel.text).toEventually(equal("2"))
+            }
+            it("Has a follower count") {
+                expect(dashboardVC.followerCountLabel.text).toEventually(equal("3500"))
+            }
+            it("Has a following count") {
+                expect(dashboardVC.followingCountLabel.text).toEventually(equal("0"))
             }
         }
     }

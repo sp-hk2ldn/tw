@@ -17,3 +17,12 @@ enum APIError: Error {
     case unknownError
     case decodeFailure
 }
+
+extension APIError {
+    init(error: Error) {
+        switch error.localizedDescription {
+        default:
+            self = .badURL
+        }
+    }
+}

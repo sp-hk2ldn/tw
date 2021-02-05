@@ -6,23 +6,24 @@
 //
 
 import Foundation
+import Combine
 
 protocol UserServiceProtocol {
-    ///Provide functionality to retrieve a users account
-    func getUser(username: String, completion: @escaping ((Result<User, APIError>) -> Void))
-    func getRepositories(username: String, completion: @escaping ((Result<[Repository], APIError>) -> Void))
+    ///Get a user
+    func getUser() -> AnyPublisher<User, APIError>
+    ///Get a list of a users repositories
+    func getRepositories() -> AnyPublisher<[Repository], APIError>
 }
 
 class UserService: UserServiceProtocol {
     
-    func getUser(username: String, completion: @escaping ((Result<User, APIError>) -> Void)) {
-        //TODO: Change to Textfield grabbed username
-        API.request(api: .user(username: "sp-seekers"), returnType: User.self, completion: completion)
-        
+    func getUser() -> AnyPublisher<User, APIError> {
+    //TODO: Change to Textfield grabbed username
+        return APIClient.request(api: .user(username: "sp-seekers"), returnType: User.self)
     }
     
-    func getRepositories(username: String, completion: @escaping ((Result<[Repository], APIError>) -> Void)) {
-        //TODO: Change to Textfield grabbed username
-        API.request(api: .repos(username: "sp-seekers"), returnType: [Repository].self, completion: completion)
+    func getRepositories() -> AnyPublisher<[Repository], APIError> {
+    //TODO: Change to Textfield grabbed username
+        return APIClient.request(api: .repos(username: "sp-seekers"), returnType: [Repository].self)
     }
 }
