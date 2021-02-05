@@ -6,32 +6,24 @@
 //
 
 import Foundation
+import Combine
 
 protocol UserServiceProtocol {
-    ///Provide functionality to retrieve a users account
-    func getUser(completion: @escaping ((Result<User, APIError>) -> Void))
+    ///Get a user
+    func getUser() -> AnyPublisher<User, APIError>
+    ///Get a list of a users repositories
+    func getRepositories() -> AnyPublisher<[Repository], APIError>
 }
 
 class UserService: UserServiceProtocol {
     
-    func getUser(completion: @escaping ((Result<User, APIError>) -> Void)) {
-        guard let url = URL(string: AppConfig().baseURL()) else { fatalError() }
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            DispatchQueue.main.async {
-                guard let data = data else {
-                    if let error = error.map({ (APIError(error: $0)) }) {
-                        completion(.failure(error))
-                        return
-                    }
-                    completion(.failure(.generic)) //Unknown Error.
-                    return
-                }
-                let decoder = JSONDecoder()
-                let result = Result(catching: {
-                    try decoder.decode(User.self, from: data)
-                }).mapError { APIError(error: $0) }
-                completion((result))
-            }
-        }.resume()
+    func getUser() -> AnyPublisher<User, APIError> {
+    //TODO: Change to Textfield grabbed username
+        return APIClient.request(api: .user(username: "sp-seekers"), returnType: User.self)
+    }
+    
+    func getRepositories() -> AnyPublisher<[Repository], APIError> {
+    //TODO: Change to Textfield grabbed username
+        return APIClient.request(api: .repos(username: "sp-seekers"), returnType: [Repository].self)
     }
 }

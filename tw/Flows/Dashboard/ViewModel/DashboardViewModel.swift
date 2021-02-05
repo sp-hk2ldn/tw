@@ -6,25 +6,52 @@
 //
 
 import Foundation
+import Combine
 
 class DashboardViewModel {
     
-    private var userService: UserServiceProtocol!
-    private var user: User?
+    private var userService: UserServiceProtocol
+    private var coordinator: DashboardCoordinator
+    @Published var repositories: [Repository]?
+    @Published var user: User?
     
-    init(userService: UserServiceProtocol) {
+    var userCancellable: AnyCancellable?
+    var repositoriesCancellable: AnyCancellable?
+    
+    init(userService: UserServiceProtocol, coordinator: DashboardCoordinator) {
         self.userService = userService
+        self.coordinator = coordinator
+        getRepositories()
+        getUser()
     }
     
-    func getUser(completion: @escaping ((APIError?) -> Void)) {
-        userService.getUser { [weak self] (result) in
-            switch result {
-            case .failure(let error):
-                completion(error)
-            case .success(let user):
-                self?.user = user
-                completion(nil)
-            }
-        }
+    private func getRepositories() {
+        self.repositoriesCancellable = userService.getRepositories()
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .failure(let error):
+                    self?.coordinator.navigationController.showAlert(with: error)
+                case .finished:
+                    break
+                }
+            }, receiveValue: { [weak self] repositories in
+                self?.repositories = repositories
+            })
+    }
+    
+    private func getUser() {
+        self.userCancellable = userService.getUser()
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case.failure(let error):
+                    self?.coordinator.navigationController.showAlert(with: error)
+                case .finished:
+                    break
+                }
+        }, receiveValue: { [weak self] user in
+            self?.user = user
+        })
     }
 }
