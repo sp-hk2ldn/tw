@@ -3,11 +3,13 @@ platform :ios, '13.0'
 target 'tw' do
   use_frameworks!
   pod 'SwiftLint'
+  pod 'RealmSwift', '=10.1.4'
 
   target 'twTests' do
     inherit! :search_paths
     pod 'Nimble'
     pod 'Quick'
+    pod 'RealmSwift', '=10.1.4'
   end
 
   target 'twUITests' do
