@@ -15,15 +15,21 @@ protocol UserServiceProtocol {
     func getRepositories() -> AnyPublisher<[Repository], APIError>
 }
 
-class UserService: UserServiceProtocol {
+final class UserService: UserServiceProtocol {
+    
+    private var username: String?
+    
+    func setUsername(username: String) {
+        self.username = username
+    }
     
     func getUser() -> AnyPublisher<User, APIError> {
-    //TODO: Change to Textfield grabbed username
-        return APIClient.request(api: .user(username: "sp-seekers"), returnType: User.self)
+        guard let username = username else { fatalError() }
+        return APIClient.request(api: .user(username: username), returnType: User.self)
     }
     
     func getRepositories() -> AnyPublisher<[Repository], APIError> {
-    //TODO: Change to Textfield grabbed username
-        return APIClient.request(api: .repos(username: "sp-seekers"), returnType: [Repository].self)
+        guard let username = username else { fatalError() }
+        return APIClient.request(api: .repos(username: username), returnType: [Repository].self)
     }
 }

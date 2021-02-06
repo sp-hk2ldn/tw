@@ -21,7 +21,7 @@ class WelcomeCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = WelcomeViewModel(coordinator: self)
+        let viewModel = WelcomeViewModel(coordinator: self, userService: UserService())
         let welcomeVC = WelcomeViewController.instantiate(storyboard: "Welcome")
         welcomeVC.viewModel = viewModel
         navigationController.pushViewController(welcomeVC, animated: true)
