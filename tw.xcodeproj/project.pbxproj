@@ -36,7 +36,7 @@
 		BD5D114B25C3201000432634 /* qnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D114A25C3201000432634 /* qnUITests.swift */; };
 		BD7638B525C7628E0013AFE1 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638B425C7628E0013AFE1 /* MockUserService.swift */; };
 		BD7638C325C765360013AFE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638C225C765360013AFE1 /* User.swift */; };
-		BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638ED25C76BFE0013AFE1 /* Error.swift */; };
+		BD7638EE25C76BFE0013AFE1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638ED25C76BFE0013AFE1 /* APIError.swift */; };
 		BD7638F825C787260013AFE1 /* MockUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7638F725C787260013AFE1 /* MockUserResponse.swift */; };
 		BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */; };
 		BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */; };
@@ -48,8 +48,8 @@
 		BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE125CB4A06001CEE40 /* Repository.swift */; };
 		BDC09BEA25CB7906001CEE40 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */; };
 		BDC09C0525CC0D1F001CEE40 /* MockRepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09C0425CC0D1F001CEE40 /* MockRepositoryResponse.swift */; };
-		BDC09C1925CD7F88001CEE40 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09C1825CD7F88001CEE40 /* MockAPI.swift */; };
 		BDC09C1E25CD8023001CEE40 /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */; };
+		BDCE224525CDC58900345950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCE224425CDC58900345950 /* Constants.swift */; };
 		BDF285D925CB00C200A05215 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF285D825CB00C200A05215 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,7 +124,7 @@
 		BD5D114C25C3201000432634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7638B425C7628E0013AFE1 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 		BD7638C225C765360013AFE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BD7638ED25C76BFE0013AFE1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		BD7638ED25C76BFE0013AFE1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BD7638F725C787260013AFE1 /* MockUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserResponse.swift; sourceTree = "<group>"; };
 		BD81E2A525C8A31C0088FB15 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		BD81E2AB25C8A5360088FB15 /* DashboardSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSpecs.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		BDC09BE125CB4A06001CEE40 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		BDC09C0425CC0D1F001CEE40 /* MockRepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoryResponse.swift; sourceTree = "<group>"; };
-		BDC09C1825CD7F88001CEE40 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
+		BDCE224425CDC58900345950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BDF285D825CB00C200A05215 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BE79F29B2988D241FE124B5E /* Pods-twTests.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twTests.release (prod).xcconfig"; path = "Target Support Files/Pods-twTests/Pods-twTests.release (prod).xcconfig"; sourceTree = "<group>"; };
 		D1AE228D6B3F8AFDF2400D65 /* Pods-qn-qnUITests.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qn-qnUITests.release (dev).xcconfig"; path = "Target Support Files/Pods-qn-qnUITests/Pods-qn-qnUITests.release (dev).xcconfig"; sourceTree = "<group>"; };
@@ -298,6 +298,7 @@
 				BD96E55825C748A80047376E /* prod.plist */,
 				BD96E55925C748B00047376E /* prodConfig.xcconfig */,
 				BD0B8F9425C7190E0081A183 /* devConfig.xcconfig */,
+				BDCE224425CDC58900345950 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -354,7 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0B8F4725C717240081A183 /* UserService.swift */,
-				BD7638ED25C76BFE0013AFE1 /* Error.swift */,
+				BD7638ED25C76BFE0013AFE1 /* APIError.swift */,
 				BD81E2CC25C8B6040088FB15 /* AppConfig.swift */,
 				BDC09BD725CB0307001CEE40 /* API.swift */,
 				BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */,
@@ -402,7 +403,6 @@
 			isa = PBXGroup;
 			children = (
 				BD7638B425C7628E0013AFE1 /* MockUserService.swift */,
-				BDC09C1825CD7F88001CEE40 /* MockAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -761,13 +761,14 @@
 				BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */,
 				BD35AF8525C32E6600BF4D03 /* MainCoordinator.swift in Sources */,
 				BD0B8F1725C5B5F80081A183 /* ProfileCoordinator.swift in Sources */,
+				BDCE224525CDC58900345950 /* Constants.swift in Sources */,
 				BD35B03825C57FC400BF4D03 /* WelcomeCoordinator.swift in Sources */,
 				BD0B8F2725C5B6480081A183 /* ProfileViewModel.swift in Sources */,
 				BD0B8F2225C5B6340081A183 /* ProfileViewController.swift in Sources */,
 				BD81E2A625C8A31C0088FB15 /* UIViewController+Utils.swift in Sources */,
 				BDC09BDD25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift in Sources */,
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
-				BD7638EE25C76BFE0013AFE1 /* Error.swift in Sources */,
+				BD7638EE25C76BFE0013AFE1 /* APIError.swift in Sources */,
 				BD35B03E25C58B1B00BF4D03 /* TabBarCoordinator.swift in Sources */,
 				BDC09BD825CB0307001CEE40 /* API.swift in Sources */,
 				BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */,
@@ -787,7 +788,6 @@
 				BD7638B525C7628E0013AFE1 /* MockUserService.swift in Sources */,
 				BD5D114025C3201000432634 /* qnTests.swift in Sources */,
 				BDC09C0525CC0D1F001CEE40 /* MockRepositoryResponse.swift in Sources */,
-				BDC09C1925CD7F88001CEE40 /* MockAPI.swift in Sources */,
 				BD7638F825C787260013AFE1 /* MockUserResponse.swift in Sources */,
 				BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */,
 				BD35AF6D25C32B2A00BF4D03 /* WelcomeSpecs.swift in Sources */,

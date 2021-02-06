@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AppConfig {
+final class AppConfig {
     // swiftlint:disable force_cast
     // swiftlint:disable identifier_name
     ///Uses the environment variables specified in the targets config file

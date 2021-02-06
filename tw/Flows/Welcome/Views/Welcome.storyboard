@@ -5,22 +5,44 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
         <scene sceneID="2Y9-nW-fuM">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="7ie-os-LKL" customClass="WelcomeViewController" customModule="qn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="7ie-os-LKL" customClass="WelcomeViewController" customModule="tw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="WelcomeViewController" id="9rG-Tk-lVo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgO-lf-bfR">
-                                <rect key="frame" x="175" y="438" width="64" height="30"/>
-                                <state key="normal" title="Welcome"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Octocat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0au-lV-pCC">
+                                <rect key="frame" x="83" y="135.5" width="248" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <connections>
-                                    <action selector="navigateToDashboard:" destination="7ie-os-LKL" eventType="touchUpInside" id="Rgy-im-AIQ"/>
+                                    <action selector="usernameTextFieldChanged:" destination="7ie-os-LKL" eventType="editingChanged" id="0fb-Ee-jHQ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there! Please enter a Github username." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-ON-Gcv">
+                                <rect key="frame" x="45" y="97" width="324.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1d-Da-ah9">
+                                <rect key="frame" x="194" y="177" width="26" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgO-lf-bfR">
+                                <rect key="frame" x="171.5" y="435.5" width="71" height="35"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <action selector="navigateToDashboard:" destination="7ie-os-LKL" eventType="touchUpInside" id="jfi-8C-MVJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -28,16 +50,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TgO-lf-bfR" firstAttribute="centerX" secondItem="gfV-x5-oey" secondAttribute="centerX" id="4aE-aA-phO"/>
+                            <constraint firstItem="Thw-ON-Gcv" firstAttribute="top" secondItem="gfV-x5-oey" secondAttribute="top" constant="53" id="7EF-e8-74u"/>
+                            <constraint firstItem="0au-lV-pCC" firstAttribute="top" secondItem="Thw-ON-Gcv" secondAttribute="bottom" constant="16" id="TKj-dH-4PE"/>
+                            <constraint firstItem="Thw-ON-Gcv" firstAttribute="centerX" secondItem="gfV-x5-oey" secondAttribute="centerX" id="VrR-ze-PpK"/>
+                            <constraint firstItem="0au-lV-pCC" firstAttribute="leading" secondItem="gfV-x5-oey" secondAttribute="leading" constant="83" id="aic-ym-GPq"/>
+                            <constraint firstItem="l1d-Da-ah9" firstAttribute="top" secondItem="0au-lV-pCC" secondAttribute="bottom" constant="7.5" id="elO-6b-XVS"/>
+                            <constraint firstItem="gfV-x5-oey" firstAttribute="trailing" secondItem="0au-lV-pCC" secondAttribute="trailing" constant="83" id="f3i-c0-7o1"/>
                             <constraint firstItem="TgO-lf-bfR" firstAttribute="centerY" secondItem="gfV-x5-oey" secondAttribute="centerY" id="yW0-eq-hnb"/>
+                            <constraint firstItem="l1d-Da-ah9" firstAttribute="centerX" secondItem="0au-lV-pCC" secondAttribute="centerX" id="zwb-Sd-oGV"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="welcomeButton" destination="TgO-lf-bfR" id="A71-hy-vfk"/>
+                        <outlet property="errorMessageLabel" destination="l1d-Da-ah9" id="DXO-BM-fOO"/>
+                        <outlet property="proceedButton" destination="TgO-lf-bfR" id="8Oa-21-KRr"/>
+                        <outlet property="usernameTextField" destination="0au-lV-pCC" id="uwc-ta-lfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smL-FA-x2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="115"/>
+            <point key="canvasLocation" x="42.028985507246382" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
