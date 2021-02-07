@@ -58,12 +58,13 @@ The technical assignment specification was that `NSUserDefaults` be _not_ used f
 
 Offline v Online strategy as follows:
 
-`If username exists in the database, load it`. 
-    `Attempt to update via network if possible `. 
-`If username doesnt exist then get data via network if possible`. 
-    `Update database and display latest information`. 
-`Bind value of latest available data emission to the UI`. 
-`If unable to update from network show the user an indicative error`. 
+* `If username exists in the database, load it`.
+
+* `Attempt to update via network if possible `. 
+* `If username doesnt exist then get data via network if possible`. 
+*    `Update database and display latest information`. 
+* `Bind value of latest available data emission to the UI`. 
+* `If unable to update from network show the user an indicative error`. 
 
 
 ### Git strategy
