@@ -13,8 +13,8 @@ class MockRepositoryResponse {
     @Published var repos: [Repository]
     init() {
         repos = [
-            Repository(name: "Swift", description: "A little programming language", fork: false, url: "https://github.com/octocat/swift"),
-            Repository(name: "Firefox", description: "A little web browser project", fork: false, url: "https://github.com/octocat/FireFox")
+            Repository(repoId: 12345, name: "Swift", repoDescription: "A little programming language", fork: false, url: "https://github.com/octocat/swift", owner: nil),
+            Repository(repoId: 123456, name: "Firefox", repoDescription: "A little web browser project", fork: false, url: "https://github.com/octocat/FireFox", owner: nil)
         ]
     }
     func getMockRespositoryResponse() -> AnyPublisher<[Repository], APIError> {

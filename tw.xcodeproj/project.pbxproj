@@ -43,13 +43,16 @@
 		BD81E2C425C8B0E70088FB15 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD81E2C325C8B0E70088FB15 /* README.md */; };
 		BD81E2CD25C8B6040088FB15 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2CC25C8B6040088FB15 /* AppConfig.swift */; };
 		BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */; };
-		BDC09BD825CB0307001CEE40 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BD725CB0307001CEE40 /* API.swift */; };
+		BDC09BD825CB0307001CEE40 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BD725CB0307001CEE40 /* APIClient.swift */; };
 		BDC09BDD25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */; };
 		BDC09BE225CB4A06001CEE40 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE125CB4A06001CEE40 /* Repository.swift */; };
 		BDC09BEA25CB7906001CEE40 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */; };
 		BDC09C0525CC0D1F001CEE40 /* MockRepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09C0425CC0D1F001CEE40 /* MockRepositoryResponse.swift */; };
 		BDC09C1E25CD8023001CEE40 /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */; };
+		BDC52B5025CEE319005A8634 /* MockRealmClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC52B4F25CEE319005A8634 /* MockRealmClient.swift */; };
 		BDCE224525CDC58900345950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCE224425CDC58900345950 /* Constants.swift */; };
+		BDCE226E25CEAD5300345950 /* RealmClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCE226D25CEAD5300345950 /* RealmClient.swift */; };
+		BDCE227325CEAED400345950 /* RealmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCE227225CEAED400345950 /* RealmProtocol.swift */; };
 		BDF285D925CB00C200A05215 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF285D825CB00C200A05215 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -133,13 +136,16 @@
 		BD81E2D425C8B8410088FB15 /* Storyboard+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Instantiate.swift"; sourceTree = "<group>"; };
 		BD96E55825C748A80047376E /* prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prod.plist; sourceTree = "<group>"; };
 		BD96E55925C748B00047376E /* prodConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prodConfig.xcconfig; sourceTree = "<group>"; };
-		BDC09BD725CB0307001CEE40 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BDC09BD725CB0307001CEE40 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		BDC09BDC25CB46B1001CEE40 /* HTTPURLResponse+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Utils.swift"; sourceTree = "<group>"; };
 		BDC09BE125CB4A06001CEE40 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BDC09BE925CB7906001CEE40 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		BDC09C0425CC0D1F001CEE40 /* MockRepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoryResponse.swift; sourceTree = "<group>"; };
 		BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
+		BDC52B4F25CEE319005A8634 /* MockRealmClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRealmClient.swift; sourceTree = "<group>"; };
 		BDCE224425CDC58900345950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDCE226D25CEAD5300345950 /* RealmClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmClient.swift; sourceTree = "<group>"; };
+		BDCE227225CEAED400345950 /* RealmProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProtocol.swift; sourceTree = "<group>"; };
 		BDF285D825CB00C200A05215 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BE79F29B2988D241FE124B5E /* Pods-twTests.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twTests.release (prod).xcconfig"; path = "Target Support Files/Pods-twTests/Pods-twTests.release (prod).xcconfig"; sourceTree = "<group>"; };
 		D1AE228D6B3F8AFDF2400D65 /* Pods-qn-qnUITests.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qn-qnUITests.release (dev).xcconfig"; path = "Target Support Files/Pods-qn-qnUITests/Pods-qn-qnUITests.release (dev).xcconfig"; sourceTree = "<group>"; };
@@ -354,11 +360,10 @@
 		BD35AF7B25C32E2F00BF4D03 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				BDCE225E25CEA87500345950 /* RealmClient */,
+				BDCE225A25CEA84A00345950 /* APIClient */,
 				BD0B8F4725C717240081A183 /* UserService.swift */,
-				BD7638ED25C76BFE0013AFE1 /* APIError.swift */,
 				BD81E2CC25C8B6040088FB15 /* AppConfig.swift */,
-				BDC09BD725CB0307001CEE40 /* API.swift */,
-				BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 		BD35B03125C5769B00BF4D03 /* MockServices */ = {
 			isa = PBXGroup;
 			children = (
+				BDC52B4E25CEE30F005A8634 /* Persistence */,
 				BD7638F625C7871B0013AFE1 /* Models */,
 				BD35B03225C576A400BF4D03 /* Network */,
 			);
@@ -509,6 +515,33 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		BDC52B4E25CEE30F005A8634 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BDC52B4F25CEE319005A8634 /* MockRealmClient.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		BDCE225A25CEA84A00345950 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				BDC09BD725CB0307001CEE40 /* APIClient.swift */,
+				BD7638ED25C76BFE0013AFE1 /* APIError.swift */,
+				BDC09C1D25CD8023001CEE40 /* GithubAPIService.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		BDCE225E25CEA87500345950 /* RealmClient */ = {
+			isa = PBXGroup;
+			children = (
+				BDCE226D25CEAD5300345950 /* RealmClient.swift */,
+				BDCE227225CEAED400345950 /* RealmProtocol.swift */,
+			);
+			path = RealmClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,6 +554,7 @@
 				BD5D112225C3200F00432634 /* Frameworks */,
 				BD5D112325C3200F00432634 /* Resources */,
 				BD81E2BF25C8AE370088FB15 /* ShellScript */,
+				EACD3154FFF74449B65B7428 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -559,6 +593,7 @@
 				BD5D114225C3201000432634 /* Sources */,
 				BD5D114325C3201000432634 /* Frameworks */,
 				BD5D114425C3201000432634 /* Resources */,
+				0A20A62D0CB5FD146B485A99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -643,6 +678,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A20A62D0CB5FD146B485A99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tw-twUITests/Pods-tw-twUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tw-twUITests/Pods-tw-twUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tw-twUITests/Pods-tw-twUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1539E0999979D7150E876BB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -743,6 +795,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		EACD3154FFF74449B65B7428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tw/Pods-tw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tw/Pods-tw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tw/Pods-tw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -754,6 +823,7 @@
 				BD35B04325C5966E00BF4D03 /* TabBarController.swift in Sources */,
 				BD35AF8025C32E5C00BF4D03 /* Coordinator.swift in Sources */,
 				BDC09C1E25CD8023001CEE40 /* GithubAPIService.swift in Sources */,
+				BDCE226E25CEAD5300345950 /* RealmClient.swift in Sources */,
 				BD5D112925C3200F00432634 /* AppDelegate.swift in Sources */,
 				BD0B8F0925C5B5900081A183 /* DashboardViewModel.swift in Sources */,
 				BDC09BEA25CB7906001CEE40 /* RepositoryTableViewCell.swift in Sources */,
@@ -770,10 +840,11 @@
 				BD35AFE325C4709400BF4D03 /* WelcomeViewModel.swift in Sources */,
 				BD7638EE25C76BFE0013AFE1 /* APIError.swift in Sources */,
 				BD35B03E25C58B1B00BF4D03 /* TabBarCoordinator.swift in Sources */,
-				BDC09BD825CB0307001CEE40 /* API.swift in Sources */,
+				BDC09BD825CB0307001CEE40 /* APIClient.swift in Sources */,
 				BD81E2D525C8B8410088FB15 /* Storyboard+Instantiate.swift in Sources */,
 				BD5D112B25C3200F00432634 /* SceneDelegate.swift in Sources */,
 				BD35AF8A25C32E7100BF4D03 /* Storyboarded.swift in Sources */,
+				BDCE227325CEAED400345950 /* RealmProtocol.swift in Sources */,
 				BD0B8F4825C717240081A183 /* UserService.swift in Sources */,
 				BDF285D925CB00C200A05215 /* DashboardViewController.swift in Sources */,
 				BD7638C325C765360013AFE1 /* User.swift in Sources */,
@@ -789,6 +860,7 @@
 				BD5D114025C3201000432634 /* qnTests.swift in Sources */,
 				BDC09C0525CC0D1F001CEE40 /* MockRepositoryResponse.swift in Sources */,
 				BD7638F825C787260013AFE1 /* MockUserResponse.swift in Sources */,
+				BDC52B5025CEE319005A8634 /* MockRealmClient.swift in Sources */,
 				BD81E2AC25C8A5360088FB15 /* DashboardSpecs.swift in Sources */,
 				BD35AF6D25C32B2A00BF4D03 /* WelcomeSpecs.swift in Sources */,
 			);

@@ -13,6 +13,7 @@ import Combine
 final class WelcomeViewModel {
     var coordinator: WelcomeCoordinator
     var userService: UserService
+    
     @Published var usernameEntry = ""
     
     var errorMessage: AnyPublisher<String, Never> {
@@ -49,6 +50,7 @@ final class WelcomeViewModel {
     }
     
     func setUsername() {
+        
         userService.setUsername(username: usernameEntry)
     }
 }

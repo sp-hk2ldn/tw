@@ -14,6 +14,6 @@ class RepositoryTableViewCell: UITableViewCell {
     
     func configureCell(with repository: Repository) {
         repositoryNameLabel.text = repository.name
-        descriptionLabel.text = repository.description
+        descriptionLabel.text = repository.repoDescription
     }
 }
