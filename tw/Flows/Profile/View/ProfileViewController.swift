@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 class ProfileViewController: UIViewController, Storyboarded {
+    //MARK: Not implemented, example only
     var viewModel: ProfileViewModel?
 }

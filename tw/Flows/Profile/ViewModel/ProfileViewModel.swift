@@ -8,5 +8,5 @@
 import Foundation
 
 class ProfileViewModel {
-    
+    //MARK: Not implemented, example only
 }
