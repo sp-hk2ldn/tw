@@ -18,6 +18,8 @@ final class Constants {
     let messageInvalidUser = "Error: Please enter a valid username"
     // MARK: User default key(s)
     let usernameKey = "currentUser"
+    // MARK: Strings to be displayed on UI
+    let noRepoDescription = "This user has decided not to give this repository a description."
     // MARK: Don't allow other initialisations of this class
     private init() {}
 }

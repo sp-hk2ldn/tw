@@ -16,6 +16,7 @@ class DashboardSpecs: QuickSpec {
         var dashboardVM: DashboardViewModel!
         var dashboardCoordinator: DashboardCoordinator!
         let userService = MockUserService(realmClient: MockRealmClient())
+        
         beforeEach {
             dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
             dashboardCoordinator = DashboardCoordinator(navigationController: UINavigationController())
@@ -26,8 +27,6 @@ class DashboardSpecs: QuickSpec {
         describe("The dashboard screen") {
             beforeEach {
                 _ = dashboardVC.view
-                
-//                dashboardVC.setupView()
             }
             it("Has a username") {
                 expect(dashboardVC.usernameLabel?.text).toEventually(equal("Mr Octocat"))

@@ -25,5 +25,11 @@ class DashboardCoordinator: Coordinator {
         navigationController.pushViewController(dashboardVC, animated: true)
     }
     
+    func navigateToDetail(repository: Repository) {
+        let repositoryCoordinator = RepositoryDetailCoordinator(navigationController: navigationController, repository: repository)
+        childCoordinators.append(repositoryCoordinator)
+        repositoryCoordinator.start()
+    }
+    
     
 }
