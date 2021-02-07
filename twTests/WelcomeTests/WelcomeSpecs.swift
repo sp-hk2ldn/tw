@@ -16,7 +16,9 @@ class WelcomeSpecs: QuickSpec {
 
         beforeEach {
             welcomeVC = WelcomeViewController.instantiate(storyboard: "Welcome")
-            welcomeVM = WelcomeViewModel(coordinator: WelcomeCoordinator(navigationController: UINavigationController()), userService: UserService())
+            welcomeVM = WelcomeViewModel(
+                coordinator: WelcomeCoordinator(navigationController: UINavigationController()),
+                userService: UserService(realmClient: MockRealmClient()))
             welcomeVC.viewModel = welcomeVM
         }
         

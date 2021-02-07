@@ -19,7 +19,7 @@ class DashboardCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = DashboardViewModel(userService: UserService(), coordinator: self)
+        let viewModel = DashboardViewModel(userService: UserService(realmClient: RealmClient()), coordinator: self)
         let dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
         dashboardVC.viewModel = viewModel
         navigationController.pushViewController(dashboardVC, animated: true)

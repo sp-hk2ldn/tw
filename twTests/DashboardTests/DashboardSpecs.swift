@@ -7,6 +7,7 @@
 
 import Quick
 import Nimble
+import RealmSwift
 @testable import tw
 
 class DashboardSpecs: QuickSpec {
@@ -14,9 +15,8 @@ class DashboardSpecs: QuickSpec {
         var dashboardVC: DashboardViewController!
         var dashboardVM: DashboardViewModel!
         var dashboardCoordinator: DashboardCoordinator!
-        let userService = MockUserService()
+        let userService = MockUserService(realmClient: MockRealmClient())
         beforeEach {
-            
             dashboardVC = DashboardViewController.instantiate(storyboard: "Dashboard")
             dashboardCoordinator = DashboardCoordinator(navigationController: UINavigationController())
             dashboardVM = DashboardViewModel(userService: userService, coordinator: dashboardCoordinator)

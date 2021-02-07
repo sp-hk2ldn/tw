@@ -11,14 +11,26 @@ import Combine
 
 
 class MockUserService: UserServiceProtocol {
+    func getUserLocal() -> AnyPublisher<User, APIError> {
+        return MockUserResponse().getUserResponse()
+    }
     
+    func getUserNetwork() -> AnyPublisher<User, APIError> {
+        return MockUserResponse().getUserResponse()
+    }
     
-    func getRepositories() -> AnyPublisher<[Repository], APIError> {
+    func getRepositoriesLocal() -> AnyPublisher<[Repository], APIError> {
         return MockRepositoryResponse().getMockRespositoryResponse()
     }
     
-    
-    func getUser() -> AnyPublisher<User, APIError> {
-        return MockUserResponse().getUserResponse()
+    func getRepositoriesNetwork() -> AnyPublisher<[Repository], APIError> {
+        return MockRepositoryResponse().getMockRespositoryResponse()
     }
+    
+    var realmClient: RealmProtocol
+    
+    init(realmClient: RealmProtocol) {
+        self.realmClient = realmClient
+    }
+
 }

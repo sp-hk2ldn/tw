@@ -37,10 +37,10 @@ class DashboardViewController: UIViewController, Storyboarded {
               let repositories = viewModel?.$repositories else {
             return
         }
-        user.compactMap { $0?.location }
+        user.compactMap { $0?.location ?? "No location specified" }
             .assign(to: \.text, on: locationLabel)
             .store(in: &cancellables)
-        user.compactMap { $0?.name }
+        user.compactMap { $0?.name ?? "Anon" }
             .assign(to: \.text, on: usernameLabel)
             .store(in: &cancellables)
         user.compactMap { $0?.following }
