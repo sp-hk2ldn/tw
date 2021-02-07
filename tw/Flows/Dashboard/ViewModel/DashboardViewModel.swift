@@ -51,4 +51,11 @@ class DashboardViewModel {
                 self?.user = user
             })
     }
+    
+    func loadRepoDetails(index: Int) {
+        guard let selectedRepository = repositories?[index] else {
+            return
+        }
+        coordinator.navigateToDetail(repository: selectedRepository)
+    }
 }

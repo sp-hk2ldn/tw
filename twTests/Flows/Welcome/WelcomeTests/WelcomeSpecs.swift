@@ -7,6 +7,8 @@
 
 import Quick
 import Nimble
+import Combine
+
 @testable import tw
 
 class WelcomeSpecs: QuickSpec {
@@ -21,7 +23,7 @@ class WelcomeSpecs: QuickSpec {
                 userService: UserService(realmClient: MockRealmClient()))
             welcomeVC.viewModel = welcomeVM
         }
-        
+    
         describe("The welcome screen") {
             beforeEach {
                 _ = welcomeVC.view
