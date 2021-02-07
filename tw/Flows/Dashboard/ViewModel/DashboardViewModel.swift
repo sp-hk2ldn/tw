@@ -6,25 +6,56 @@
 //
 
 import Foundation
+import Combine
 
 class DashboardViewModel {
     
-    private var userService: UserServiceProtocol!
-    private var user: User?
+    private var userService: UserServiceProtocol
+    private var coordinator: DashboardCoordinator
+    @Published var repositories: [Repository]?
+    @Published var user: User?
+    @Published var errorMessage: String?
     
-    init(userService: UserServiceProtocol) {
+    var anyErrorMessageCancellable: AnyCancellable?
+    var userCancellable: AnyCancellable?
+    var repositoriesCancellable: AnyCancellable?
+    var cancellables = Set<AnyCancellable>()
+    
+    init(userService: UserServiceProtocol, coordinator: DashboardCoordinator) {
         self.userService = userService
+        self.coordinator = coordinator
+        getRepositories()
+        getUser()
     }
     
-    func getUser(completion: @escaping ((APIError?) -> Void)) {
-        userService.getUser { [weak self] (result) in
-            switch result {
-            case .failure(let error):
-                completion(error)
-            case .success(let user):
+    private func getRepositories() {
+        self.repositoriesCancellable = userService.getRepositoriesNetwork().merge(with: userService.getRepositoriesLocal())
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                if case let .failure(error) = completion {
+                    self?.coordinator.navigationController.showAlert(with: error)
+                }
+            }, receiveValue: { [weak self] (repositories) in
+                self?.repositories = repositories
+            })
+    }
+    
+    private func getUser() {
+        self.userCancellable = userService.getUserNetwork().merge(with: userService.getUserLocal())
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { [weak self] (completion) in
+                if case let .failure(error) = completion {
+                    self?.coordinator.navigationController.showAlert(with: error)
+                }
+            }, receiveValue: { [weak self] (user) in
                 self?.user = user
-                completion(nil)
-            }
+            })
+    }
+    
+    func loadRepoDetails(index: Int) {
+        guard let selectedRepository = repositories?[index] else {
+            return
         }
+        coordinator.navigateToDetail(repository: selectedRepository)
     }
 }

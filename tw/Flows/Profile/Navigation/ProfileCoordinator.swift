@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class ProfileCoordinator: Coordinator {
+    //MARK: Not implemented, example only
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
