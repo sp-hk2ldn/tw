@@ -13,9 +13,9 @@ Local:
 
 Third Party:
 
-`SwiftLint`  for code linting [Readme](https://github.com/realm/SwiftLint). 
-`Quick` for spec/bdd testing [Readme](https://github.com/Quick/Quick). 
-`Nimble` for matching [Readme](https://github.com/Quick/Nimble). 
+`SwiftLint`  for code linting [Readme](https://github.com/realm/SwiftLint).  
+`Quick` for spec/bdd testing [Readme](https://github.com/Quick/Quick).  
+`Nimble` for matching [Readme](https://github.com/Quick/Nimble).  
 `Realm` for persistence layer [Readme](https://docs.mongodb.com/realm-sdks/swift/latest/)
 
 ### Architecture
