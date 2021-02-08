@@ -64,7 +64,7 @@ Offline v Online strategy as follows:
 * `If username doesnt exist then get data via network if possible`. 
 *    `Update database and display latest information`. 
 * `Bind value of latest available data emission to the UI`. 
-* `If unable to update from network show the user an indicative error`. 
+* `If no local data and unable to update from network, then show the user an indicative error`. 
 
 
 ### Git strategy
